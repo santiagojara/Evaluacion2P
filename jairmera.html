@@ -67,11 +67,19 @@
                       >Santiago Jara Moya</a
                     >
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="nombreapellido.html"
+                      >Nombre Apellido</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="jairmera.html">Jair Mera</a>
+                  </li>
                 </ul>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="nombreapellido.html"
-                      >Nombre Apellido</a
+                      >Jair Mera</a
                     >
                   </li>
                 </ul>
@@ -87,30 +95,167 @@
         <h1 class="text-center">MANEJO Y CONFIGURACIÓN DE SOFTWARE</h1>
         <h3 class="text-center">PERIODO SEPTIEMBRE 2023 / FEBRERO 2024</h3>
         <hr />
-        <h3 class="text-center">NOMBRE APELLIDO</h3>
+        <h3 class="text-center">JAIR MERA</h3>
         <section class="col-8">
           <br />
           <h5>PROCESO ACS</h5>
           <ul>
-            <li>PROCESO 1</li>
-            <li>PROCESO 2</li>
-            <li>PROCESO 3</li>
-            <li>PROCESO 4</li>
-            <li>PROCESO 5</li>
+            <li>
+              Identificación de Objetos en la Configuración del Software:
+              <p>
+                Selección y control de los elementos de software que se deben
+                gestionar a lo largo del ciclo de vida del proyecto.
+              </p>
+            </li>
+            <li>
+              Control de Cambio:
+              <p>
+                Procedimientos y mecanismos para la gestión y aprobación de
+                cambios en el software, asegurando que se realicen de manera
+                controlada y documentada.
+              </p>
+            </li>
+            <li>
+              Control de Versión:
+              <p>
+                Gestión de las diferentes versiones del software y cómo se
+                manejan las iteraciones del mismo.
+              </p>
+            </li>
+            <li>
+              Auditoría de Configuración y Reporte de Estado:
+              <p>
+                Las auditorías verifican la conformidad con los requisitos y
+                estándares, mientras que los reportes de estado proporcionan una
+                visión actualizada del progreso del proyecto.
+              </p>
+            </li>
+            <li>
+              Auditoría de la Configuración:
+              <p>
+                Importancia de las revisiones técnicas y auditorías en la
+                configuración del software para asegurar una implementación
+                adecuada de los cambios y mantener la integridad del producto.
+              </p>
+            </li>
+            <li>
+              Reporte de Estado:
+              <p>
+                El reporte de estado de la configuración responde preguntas
+                claves sobre los cambios realizados, quién los hizo, cuándo y
+                qué más podría afectarse.
+              </p>
+            </li>
+            <li>
+              Gestión de Lanzamientos:
+              <p>
+                Proceso para garantizar la entrega adecuada de productos
+                (software, documentación, materiales auxiliares) a la parte
+                receptora designada.
+              </p>
+            </li>
           </ul>
           <br />
           <h5>FLUJO DE TRABAJO DE GITFLOW</h5>
           <ul>
-            <li>FLUJO 1</li>
-            <li>FLUJO 2</li>
-            <li>FLUJO N</li>
+            <li>
+              main:
+              <p>
+                La rama main es la rama principal del proyecto, en ella se
+                encuentran los archivos que se encuentran en producción.
+              </p>
+            </li>
+            <li>
+              develop
+              <p>
+                La rama develop es la rama de desarrollo del proyecto, en ella
+                se encuentran los archivos que se encuentran en desarrollo
+                incluyendo las features que se van realizando.
+              </p>
+            </li>
+            <li>
+              feature/{nombre-feature}
+              <p>
+                La rama feature es la rama de desarrollo de una nueva
+                funcionalidad del proyecto, en ella se encuentran los archivos
+                que se encuentran en desarrollo.
+              </p>
+            </li>
+            <li>
+              release/{nombre-release}
+              <p>
+                La rama release es la rama de desarrollo de una nueva versión
+                del proyecto, una vez finalizada la versión se integra a main.
+              </p>
+            </li>
+            <li>
+              hotfix/{nombre-hotfix}
+              <p>
+                La rama hotfix es la rama donde se corrigen errores de la rama
+                main, despues de corregir los errores se integra a main y
+                develop.
+              </p>
+            </li>
+            <li>
+              Flujo:
+              <p>El flujo de trabajo de Gitflow es el siguiente:</p>
+              <ol>
+                <li>Se crea la rama develop a partir de main.</li>
+                <li>
+                  Se crea la rama feature/{nombre-feature} a partir de develop.
+                  Una vez finalizada la funcionalidad se integra a develop.
+                </li>
+                <li>
+                  Se crea la rama release/{nombre-release} a partir de develop.
+                </li>
+                <li>
+                  Se crea la rama hotfix/{nombre-hotfix} a partir de main.
+                </li>
+              </ol>
+            </li>
           </ul>
           <br />
           <h5>FLUJO DE PROCESO GESTIÓN DE CAMBIO</h5>
           <ul>
-            <li>FLUJO 1</li>
-            <li>FLUJO 2</li>
-            <li>FLUJO N</li>
+            <li>
+              Envío:
+              <p>
+                Inicio del proceso con la presentación de la solicitud de
+                cambio.
+              </p>
+            </li>
+            <li>
+              Planificación:
+              <p>
+                Análisis del impacto, elaboración del plan de implementación y
+                plan de reversión (rollback) si es necesario.
+              </p>
+            </li>
+            <li>
+              Aprobación:
+              <p>
+                Evaluación de la solicitud por el Comité Asesor de Cambios (CAB)
+                para su aceptación o rechazo.
+              </p>
+            </li>
+            <li>
+              Implementación:
+              <p>
+                Ejecución de las tareas necesarias para llevar a cabo el cambio
+                aprobado.
+              </p>
+            </li>
+            <li>
+              Revisión:
+              <p>
+                Inspección post-implementación para asegurar que los cambios
+                cumplen con los requisitos.
+              </p>
+            </li>
+            <li>
+              Cierre:
+              <p>Conclusión y documentación formal del cambio implementado.</p>
+            </li>
           </ul>
         </section>
       </section>
