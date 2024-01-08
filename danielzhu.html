@@ -1,16 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Zhu</title>
+    <title>Inicio | Evaluación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header></header>
-    <nav></nav>
-    <main>
-        <section></section>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="" height="24" class="d-inline-block align-text-top">
+                    MyCS
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="estudiantes.html">Estudiantes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="santiagojara.html">Santiago Jara Moya</a></li>
+                                <li><a class="dropdown-item" href="danielzhu.html">Daniel Zhu</a></li>
+
+                            </ul>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="nombreapellido.html">Nombre Apellido</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <main class="container">
+        <section class="row">
+            <h1 class="text-center">MANEJO Y CONFIGURACIÓN DE SOFTWARE</h1>
+            <h3 class="text-center">PERIODO SEPTIEMBRE 2023 / FEBRERO 2024</h3>
+            <hr>
+            <h3 class="text-center">DANIEL ZHU</h3>
+            <section class="col-8">
+                <br>
+                <h5>PROCESO ACS</h5>
+                <ul>
+                    <li>Definición de Objetivos y Alcance: Establecer los objetivos específicos que el proceso ACS busca
+                        alcanzar y delimitar su alcance dentro del proyecto o sistema.</li>
+                    <li>Análisis y Diseño: Examinar los requisitos y diseñar las estrategias para cumplir con las metas
+                        del proceso ACS.</li>
+                    <li>Implementación: Desarrollar y poner en práctica las soluciones y estrategias diseñadas en la
+                        etapa anterior.</li>
+                    <li>Evaluación y Pruebas: Revisar y probar el proceso ACS para asegurar que cumple con los
+                        requisitos y objetivos establecidos.</li>
+                    <li>Mantenimiento y Mejora Continua: Realizar seguimiento continuo y aplicar mejoras al proceso ACS
+                        basándose en los resultados de la evaluación y feedback recibido.</li>
+                </ul>
+                <br>
+                <h5>FLUJO DE TRABAJO DE GITFLOW</h5>
+                <ul>
+                    <li>Master: Representa la rama de producción. Contiene el código que ha sido probado y se considera
+                        estable.</li>
+                    <li>Develop: Rama de integración para el desarrollo en curso. Se utiliza como base para crear nuevas
+                        características y realizar pruebas de integración.</li>
+                    <li>Feature: Se utilizan para desarrollar nuevas características para el próximo lanzamiento.</li>
+                    <li>Release: Prepara el código para un nuevo lanzamiento, realiza pruebas finales y corrige
+                        problemas menores.</li>
+                    <li>Hotfix: Rama destinada a corregir errores críticos en la rama Master.</li>
+                </ul>
+                <br>
+
+                <h5>FLUJO DE PROCESO GESTIÓN DE CAMBIO</h5>
+                <ul>
+                    <li>Identificación del Cambio: Registro y evaluación de cambios propuestos, considerando la
+                        importancia y urgencia.</li>
+                    <li>Evaluación y Análisis: Evaluación de la viabilidad y el impacto del cambio, incluyendo análisis
+                        de impacto, riesgos y complejidad.</li>
+                    <li>Aprobación: Desarrollo e implementación del cambio en el código fuente o configuración del
+                        sistema.</li>
+                    <li>Pruebas: Realización de pruebas para garantizar que el cambio cumpla con requisitos funcionales
+                        y no cause regresiones.</li>
+                    <li>Despliegue: Implementación del cambio en el entorno de producción, seguido de monitoreo
+                        post-implementación.</li>
+                    <li>Documentación: Actualización de documentación técnica y de usuario para reflejar el cambio
+                        realizado.</li>
+                    <li>Cierre: Finalización formal del proceso, incluyendo el archivo de documentación y la revisión
+                        para identificar mejoras.</li>
+                </ul>
+            </section>
+        </section>
     </main>
-    <footer></footer>
+    <br>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">&copy; 2024 por UTA-FISEI</span>
+        </div>
+    </footer>
 </body>
+
 </html>
