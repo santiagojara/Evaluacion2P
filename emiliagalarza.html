@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Evaluación</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logo.png"
+              alt=""
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            MyCS
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="estudiantes.html">Estudiantes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Web Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="santiagojara.html"
+                      >Santiago Jara Moya</a
+                    >
+                  </li>
+                </ul>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="nombreapellido.html"
+                      >Nombre Apellido</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <main class="container">
+      <section class="row">
+        <h1 class="text-center">MANEJO Y CONFIGURACIÓN DE SOFTWARE</h1>
+        <h3 class="text-center">PERIODO SEPTIEMBRE 2023 / FEBRERO 2024</h3>
+        <hr />
+        <h3 class="text-center">EMILIA GALARZA</h3>
+        <section class="col-8">
+          <br />
+          <h5>PROCESO ACS</h5>
+          <ul>
+            <li>
+              Definición de Requerimientos: <br />
+              <p>
+                Establecimiento de los criterios que el software debe cumplir,
+                tanto en funcionalidades como en restricciones operativas.
+                Comprende la recolección detallada de necesidades del usuario y
+                la transcripción a especificaciones técnicas.
+              </p>
+            </li>
+            <li>
+              Diseño del Sistema: <br />
+              <p>
+                Creación de la arquitectura del software que incluye la
+                definición de módulos, interfaces y datos que serán controlados
+                y gestionados por el sistema. Se elaboran diagramas y modelos
+                que sirven como planos para el desarrollo.
+              </p>
+            </li>
+            <li>
+              Desarrollo: <br />
+              <p>
+                Implementación de los componentes de software según el diseño,
+                incluyendo las funciones de control y gestión de la aplicación.
+                Codificación y configuración se llevan a cabo en esta etapa.
+              </p>
+            </li>
+            <li>
+              Pruebas: <br />
+              <p>
+                Verificación de que el sistema de control de aplicaciones cumple
+                con los requerimientos especificados y gestiona eficientemente
+                las operaciones de la aplicación. Se incluyen pruebas unitarias,
+                integración, sistema y aceptación del usuario.
+              </p>
+            </li>
+            <li>
+              Implementación y Mantenimiento: <br />
+              <p>
+                Despliegue del software y monitoreo continuo para asegurar el
+                control operativo, realizar ajustes y actualizaciones según sea
+                necesario. Incluye la corrección de errores y la actualización
+                de funcionalidades.
+              </p>
+            </li>
+          </ul>
+          <br />
+          <h5>FLUJO DE TRABAJO DE GITFLOW</h5>
+          <ul>
+            <li>
+              Rama Main o Master: <br />
+              <p>
+                Representa el código de producción, el cual está en vivo y es
+                utilizado por los usuarios finales. Debe ser estable en todo
+                momento, reflejando una versión fiable del software. Las
+                actualizaciones en esta rama se realizan a través de ramas
+                release o hotfix. Cada commit en master se etiqueta con un
+                número de versión para el seguimiento de lanzamientos. Es la
+                rama más crítica, ya que cualquier error aquí afecta
+                directamente a los usuarios.
+              </p>
+            </li>
+            <li>
+              Rama develop: <br />
+              <p>
+                Sirve como rama de integración para características y mejoras
+                nuevas. Contiene el estado más avanzado del desarrollo, pero aún
+                no listo para producción. Todas las ramas feature se fusionan
+                aquí una vez completadas. Actúa como base para crear ramas
+                release y hotfix. Representa el próximo lanzamiento en
+                preparación, con un estado menos estable que master.
+              </p>
+            </li>
+            <li>
+              Rama feature: <br />
+              <p>
+                Son ramas temporales creadas para desarrollar nuevas
+                funcionalidades. Se bifurcan de develop y se fusionan de vuelta
+                en ella una vez finalizada la característica. Cada rama feature
+                se enfoca en una única funcionalidad o mejora, permitiendo a los
+                equipos trabajar en diferentes características simultáneamente
+                sin perturbar la rama principal de desarrollo. Se nombran de
+                manera que reflejen la funcionalidad o tarea en desarrollo, como
+                feature/login o feature/payment-integration.
+              </p>
+            </li>
+            <li>
+              Rama hotfix: <br />
+              <p>
+                Se utilizan para reparaciones urgentes en la versión de
+                producción. Se bifurcan directamente de master y se destinan a
+                corregir errores críticos encontrados en producción. Una vez
+                completado el arreglo, se fusionan en master y develop para
+                asegurar que la corrección esté presente en ambas ramas.
+                Permiten una rápida respuesta a problemas sin perturbar el flujo
+                de trabajo de desarrollo regular. Los hotfix suelen estar
+                asociados con una versión, por ejemplo, hotfix/1.3.1.
+              </p>
+            </li>
+            <li>
+              Rama release: <br />
+              <p>
+                Preparan el próximo lanzamiento de producción, iniciando desde
+                la rama develop. Permiten realizar pruebas finales y
+                correcciones menores sin afectar el desarrollo continuo en
+                develop. Una vez que la rama release está lista, se fusiona en
+                master y de vuelta en develop. Aseguran una transición suave y
+                controlada de las características de develop a master. Se
+                etiquetan con un número de versión, como release/1.3.0.
+              </p>
+            </li>
+          </ul>
+          <br />
+          <h5>FLUJO DE PROCESO GESTIÓN DE CAMBIO</h5>
+          <ul>
+            <li>
+              Solicitud de Cambio (Request for Change - RFC): <br />
+              <p>
+                Inicio del proceso mediante la presentación de una solicitud de
+                cambio detallada, la cual debe incluir la naturaleza, el
+                propósito y el impacto del cambio propuesto.
+              </p>
+            </li>
+            <li>
+              Evaluación del Cambio: <br />
+              <p>
+                Análisis del cambio propuesto por un comité de control de
+                cambios o un responsable para valorar su impacto, coste,
+                beneficios y riesgos asociados.
+              </p>
+            </li>
+            <li>
+              Aprobación del Cambio: <br />
+              <p>
+                Decisión sobre si proceder con el cambio. Si se aprueba, se
+                planifica y se asignan los recursos necesarios. Si se rechaza,
+                se documentan las razones y se comunica a las partes
+                interesadas.
+              </p>
+            </li>
+            <li>
+              Planificación del Cambio: <br />
+              <p>
+                Desarrollo de un plan detallado para implementar el cambio, que
+                debe incluir tareas, recursos, cronograma y procedimientos de
+                prueba.
+              </p>
+            </li>
+            <li>
+              Implementación del Cambio: <br />
+              <p>
+                Ejecución del plan de cambio bajo supervisión, con una
+                comunicación constante a las partes interesadas sobre el
+                progreso.
+              </p>
+            </li>
+            <li>
+              Pruebas y Validación: <br />
+              <p>
+                Pruebas exhaustivas para verificar que el cambio funciona como
+                se esperaba y no introduce nuevos problemas en el sistema.
+              </p>
+            </li>
+            <li>
+              Documentación: <br />
+              <p>
+                Actualización de la documentación del sistema para reflejar el
+                cambio implementado, incluyendo manuales técnicos y ayuda para
+                usuarios.
+              </p>
+            </li>
+            <li>
+              Revisión Post-Implementación: <br />
+              <p>
+                Evaluación del cambio una vez implementado para asegurar que se
+                han alcanzado los objetivos y que no hay efectos secundarios no
+                previstos.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
