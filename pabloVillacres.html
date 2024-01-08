@@ -1,19 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo V</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Evaluación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header></header>
-    <nav>
-        
-    </nav>
-    <main>
-        <section></section>
-        <section></section>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="" height="24" class="d-inline-block align-text-top" />
+                    MyCS
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="estudiantes.html">Estudiantes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="santiagojara.html">Santiago Jara Moya</a>
+                                </li>
+                                <li><a class="dropdown-item" href="pabloVillacres.html">Pablo Villacres</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br />
+    <main class="container">
+        <section class="row">
+            <h1 class="text-center">MANEJO Y CONFIGURACIÓN DE SOFTWARE</h1>
+            <h3 class="text-center">PERIODO SEPTIEMBRE 2023 / FEBRERO 2024</h3>
+            <hr />
+            <h3 class="text-center">Pablo Villacres</h3>
+            <section class="col-8">
+                <br />
+                <h5>PROCESO ACS</h5>
+                <ul>
+                    <li>Definición de Objetivos y Alcance: Establecer los objetivos específicos que el proceso ACS busca
+                        alcanzar y delimitar su alcance dentro del proyecto o sistema.</li>
+                    <li>Análisis y Diseño: Examinar los requisitos y diseñar las estrategias para cumplir con las metas
+                        del proceso ACS.</li>
+                    <li>Implementación: Desarrollar y poner en práctica las soluciones y estrategias diseñadas en la
+                        etapa anterior.</li>
+                    <li>Evaluación y Pruebas: Revisar y probar el proceso ACS para asegurar que cumple con los
+                        requisitos y objetivos establecidos.</li>
+                    <li>Mantenimiento y Mejora Continua: Realizar seguimiento continuo y aplicar mejoras al proceso ACS
+                        basándose en los resultados de la evaluación y feedback recibido.</li>
+                </ul>
+
+                <br />
+                <h5>FLUJO DE TRABAJO DE GITFLOW</h5>
+                <ul>
+                    <li>
+                        Master (o Main): Representa la versión de producción del proyecto.
+                        Contiene el código en el estado más estable y es la base para los
+                        lanzamientos finales.
+                    </li>
+                    <li>
+                        Develop: Es la rama de desarrollo principal. Todo el código de
+                        nuevas características se fusiona aquí antes de ser llevado a la
+                        rama master. Representa el estado actual del próximo lanzamiento.
+                    </li>
+                    <li>
+                        Feature: Estas ramas se utilizan para desarrollar nuevas
+                        características. Cada rama de característica se crea a partir de
+                        la rama develop y se fusiona de nuevo en develop una vez
+                        completada.
+                    </li>
+                    <li>
+                        Release: Se preparan para lanzamientos específicos. Se bifurcan de
+                        develop y solo contienen ajustes finales antes de fusionarse en
+                        master y develop.
+                    </li>
+                    <li>
+                        Hotfix: Se usan para correcciones rápidas en la versión de
+                        producción. Se bifurcan directamente de master, y una vez
+                        completadas, se fusionan en master y develop.
+                    </li>
+                    <li>
+                        Support (opcional): Esta rama es menos común y se usa para
+                        gestionar versiones antiguas del software, que aún necesitan
+                        mantenimiento y no están incluidas en la actual línea principal de
+                        desarrollo.
+                    </li>
+                </ul>
+                <br />
+                <h5>FLUJO DE PROCESO GESTIÓN DE CAMBIO</h5>
+                <ul>
+                    <li>Solicitud de Cambio: Registro y presentación formal de una solicitud de cambio.</li>
+                    <li>Evaluación de Impacto: Análisis del impacto potencial del cambio propuesto.</li>
+                    <li>Aprobación del Cambio: Revisión de la solicitud y aprobación o rechazo del cambio.</li>
+                    <li>Planificación de la Implementación: Desarrollo de un plan detallado para implementar el cambio.
+                    </li>
+                    <li>Implementación del Cambio: Ejecución del plan de cambio en el entorno operativo.</li>
+                    <li>Revisión y Cierre: Evaluación de la efectividad del cambio y cierre formal del proceso.</li>
+                </ul>
+            </section>
+        </section>
     </main>
-    <footer></footer>
+    <br />
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">&copy; 2024 por UTA-FISEI</span>
+        </div>
+    </footer>
 </body>
+
 </html>
